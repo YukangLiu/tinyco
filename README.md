@@ -8,6 +8,27 @@
 <br>
 2、使用：<br>
 	netco只有两个接口，非常容易使用，分别是co_go(func)用于运行一个新的协程，co_yield()用于暂停当前协程。示例如下：<br>
+```
+int main()
+{
+	co_go(
+		[]
+		{
+			std::cout << "111" << std::endl;
+			co_go(
+				[]
+				{
+					std::cout << "222" << std::endl;
+					co_yield();
+					std::cout << "222222" << std::endl;
+				}
+				);
+			std::cout << "111111" << std::endl;
+		}
+	);
+	return 0;
+}
+```
 <br>
 <br>
 3、编译：<br>
