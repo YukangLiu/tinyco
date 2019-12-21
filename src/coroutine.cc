@@ -3,7 +3,7 @@
 #include "schedule.h"
 #include "parameter.h"
 
-using namespace netco;
+using namespace tinyco;
 
 static void coWrapFunc(Schedule* sche)
 {

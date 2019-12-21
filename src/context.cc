@@ -3,7 +3,7 @@
 #include "parameter.h"
 #include <stdlib.h>
 
-using namespace netco;
+using namespace tinyco;
 
 Context::Context()
 	:pCtx_(nullptr),pStack_(nullptr)

@@ -4,7 +4,7 @@
 #include "context.h"
 #include "utils.h"
 
-namespace netco
+namespace tinyco
 {
 
 	enum coStatus

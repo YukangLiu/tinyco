@@ -1,7 +1,7 @@
 //@author Liu Yukang
 #include "schedule.h"
 
-using namespace netco;
+using namespace tinyco;
 
 Schedule* Schedule::scheduler_ = nullptr;
 std::mutex Schedule::initMutex_;

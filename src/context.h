@@ -3,7 +3,7 @@
 #include "utils.h"
 #include <ucontext.h>
 
-namespace netco
+namespace tinyco
 {
 
     class Schedule;
